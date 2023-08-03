@@ -1,8 +1,11 @@
 import React from 'react'
-
+import './App.css'
+import AddUser from './components/UI/AddUser'
 const App = () => {
   return (
-    <div>This is app.js bitch</div>
+    <>
+      <AddUser/>
+    </>
   )
 }
 
