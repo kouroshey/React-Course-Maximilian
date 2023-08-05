@@ -1,0 +1,55 @@
+.accr-wrapper{
+    width: 100%;
+}
+
+.accr-ccontainer{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 8rem;
+}
+
+.accr-content{
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 14px;
+}
+
+.accr-heading{
+
+}
+
+.accr-item {
+    background-color: rgb(172, 213, 255);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.accr-item-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accr-item-top-left {
+    display: flex;
+    gap: 1rem;
+}
+
+.accr-item-top-left span {
+    font-size: large;
+    font-weight: bold;
+}
+
+.accr-question{
+
+}
+
+.icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
