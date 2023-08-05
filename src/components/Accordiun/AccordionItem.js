@@ -13,7 +13,7 @@ const AccordionItem = ({ item }) => {
         <>
             <div className="accr-item-top">
                 <div className="accr-item-top-left">
-                    <span className='accr-id'>{item.id}</span>
+                    <span className='accr-id text-blue-100'>{item.id}</span>
                     <p className="accr-question">{item.title}</p>
                 </div>
                 <MdOutlineKeyboardArrowDown className='icon' onClick={e => answerShowHandler(e)} />

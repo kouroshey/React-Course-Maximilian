@@ -18,10 +18,6 @@
     border-radius: 14px;
 }
 
-.accr-heading{
-
-}
-
 .accr-item {
     background-color: rgb(172, 213, 255);
     padding: 1rem;
@@ -45,9 +41,6 @@
     font-weight: bold;
 }
 
-.accr-question{
-
-}
 
 .icon {
     font-size: 2rem;
