@@ -6,22 +6,24 @@ const Expenses = () => {
     const [expenseDetails, setExpenseDetail] = useState([])
 
     const newExpense = {
+        id: 0,
         title: null,
         date: null,
         amount: null
     }
 
-const setDetailsHandler = (e, title, amount, date) => {
+    const setDetailsHandler = (e, title, amount, date) => {
         e.preventDefault()
         newExpense.title = title
         newExpense.amount = amount
         newExpense.date = date
+        newExpense.id += 1
 
         if (title && amount && date) {
-            setExpenseDetail(prev => prev.push(newExpense))
+            setExpenseDetail(prevDetails => [...prevDetails, newExpense]);
             console.log(newExpense);
-            console.log(expenseDetails);
         }
+        console.log(expenseDetails);
     }
 
 
@@ -33,10 +35,10 @@ const setDetailsHandler = (e, title, amount, date) => {
                         setDetailsHandler={setDetailsHandler}
                     // setExpenseDetailsHandler={setExpenseDetailsHandler}
                     />
-                    <div className="expense-list w-full bg-gray-700 rounded-md">
-                        {/* {expenseDetails.map(item => (
-                            <ExpenseItem {...item} />
-                        ))} */}
+                    <div className="expense-list w-full">
+                        {expenseDetails.map((item) => (
+                            <ExpenseItem {...item} key={Math.random()} />
+                        ))}
                     </div>
                 </div>
             </div>

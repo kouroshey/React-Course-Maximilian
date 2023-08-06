@@ -4,14 +4,15 @@ import './App.css'
 // import UserWrapper from './components/Users/UserWrapper'
 import Accordion from './components/Accordiun/Accordion'
 import Expenses from './components/Expenses/Expenses'
+import Todos from './components/Todos/Todos'
 
 const App = () => {
   
   return (
     <>
       {/* <Accordion/> */}
-      <Expenses/>
-      
+      {/* <Expenses/> */}
+      <Todos/>
     </>
   )
 }
