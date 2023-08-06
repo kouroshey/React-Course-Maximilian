@@ -5,6 +5,7 @@ import './App.css'
 import Accordion from './components/Accordiun/Accordion'
 import Expenses from './components/Expenses/Expenses'
 import Todos from './components/Todos/Todos'
+import AddUsers from './components/AddUsers/AddUsers'
 
 const App = () => {
   
@@ -12,7 +13,8 @@ const App = () => {
     <>
       {/* <Accordion/> */}
       {/* <Expenses/> */}
-      <Todos/>
+      {/* <Todos/> */}
+      <AddUsers/>
     </>
   )
 }
